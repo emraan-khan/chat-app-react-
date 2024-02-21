@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f2f5;
+    color: black;
+  }
+  .left-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3bcc94;
+    color: #fff;
+    font-size: 16px;
+  
+  }
+  .avatar {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin: 0 8px;
+  }
+  .header p {
+    font-size: 18px;
+    color: #fff;
+    font-family: cursive;
+    font-family: "Open Sans", sans-serif;
+  }
+  .contact-tab {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.2px solid rgb(208, 201, 201);
+    padding: 3px;
+  }
+  .contactText {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #2f2f2f;
+    width: auto;
+  }
+  .contactText p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  /*  */
+  .left-sidebar-header {
+    box-shadow: 0 4px 8px 0 rgb(59 59 59 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+  
+  /* new convo tab */
+  .new-convo {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 40px;
+    height: fit-content;
+    cursor: pointer;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .new-convo:hover{
+    /* border: 1px solid red; */
+    background-color: rgba(0, 0, 0, 0.1); /* Darken the background slightly */
+
+  }
+  .new-convo p {
+    align-self: center;
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .new-convo .fas {
+    padding: 1px;
+  }
+  .new-convo-tab {
+    border: 1px solid rgb(137, 47, 255);
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    z-index: 99;
+  }
+  .nct-header {
+    background-color: #648381;
+    color: #fff;
+    height: 55px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .nct-header p {
+    font-size: 18px;
+  }
+  .nct-header .fas {
+    cursor: pointer;
+  }
+  .nct-list {
+    height: 343px;
+    overflow: auto;
+  }
+  @media screen and (max-width: 1200px) {
+    .new-convo-tab {
+      width: 300px;
+    }
+  }
+  @media screen and (max-width: 792px) {
+    .new-convo-tab {
+      top: 100px;
+      right: 30%;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .new-convo-tab {
+      top: 100px;
+      right: 20%;
+    }
+  }
